@@ -1,0 +1,161 @@
+
+
+  @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Cherry+Bomb+One&family=Permanent+Marker&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Cherry+Bomb+One&family=Permanent+Marker&display=swap');
+
+*{
+    padding: 0;
+    margin: 0%;
+    box-sizing: border-box;
+}
+.wrapper{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    gap: 5vw;
+
+}
+.container{
+    
+    
+    display: grid;
+    grid-template-rows: repeat(3, 10vw);
+    grid-template-columns: repeat(3, 10vw);
+}
+.nav{
+    /* border: 1px solid black; */
+    height: 6vw;
+    background-color:rgb(239, 211, 215);
+}
+.box{
+    border: 1px solid black;
+  cursor: pointer;
+  display: flex;
+    justify-content: center;
+    align-items:center;
+  font-family: 'Cherry Bomb One', cursive;
+  font-family: 'Permanent Marker', cursive;
+  font-size: 7vw;
+}
+.b1{
+    border-top: none;
+    border-left: none;
+}
+.b4{
+    border-left: none;
+}
+.b7{
+    border-left: none;
+    border-bottom: none;
+}
+.b2{
+    border-top: none;
+    
+}
+.b3{
+    border-top: none;
+    border-right: none;
+    
+}
+.b6{
+    border-right: none;
+}
+.b9{
+    border-right: none;
+    border-bottom: none;
+}
+.b8{
+    border-bottom: none;
+}
+.box:hover{
+    background-color: rgb(229, 210, 229);
+}
+img{
+    width:0vw;
+    translate: 0 -20px;
+    transition:all ease-in-out ;
+  transition-duration: 1533ms;
+}
+.name{
+   
+    
+    text-align: center;
+    font-size: 4vw;
+    background-image: linear-gradient(to left top, rgb(171, 206, 218), pink);
+    font-family: 'Caveat', cursive;
+    
+}
+.reset{
+    padding:7px 23px;
+    font-weight: bolder;
+    font-size: 2vw;
+    font-family: 'Itim', cursive;
+    border-radius: 10px;
+   background-image: linear-gradient(to left,rgb(202, 171, 202),pink);
+}
+.btn{
+    translate:0px 70px;
+}
+.turn{
+    font-family: 'Yatra One', cursive;
+    margin-bottom: 1vw;
+    font-size: 3vw;
+    translate:0px 50px;
+}
+.btns{
+    padding:10px 20px;
+    
+    
+}
+.btnx{
+    color: lightblue;
+    cursor: pointer;
+}
+.btny{
+    color: pink;
+    cursor: pointer;
+   
+}
+/* Media Query for Tablets */
+
+
+
+@media (min-width: 768px) {
+    .box {
+        font-size: 5vw;  
+    }
+
+    .name, .turn {
+        font-size: 3vw; 
+    }
+
+    .reset {
+        font-size: 1.5vw; 
+    }
+
+    .nav {
+        height: 4vw;  
+    }
+}
+
+/* Media Query for Desktops */
+@media (min-width: 1024px) {
+    .box {
+        font-size: 4vw; 
+    }
+
+    .name, .turn {
+        font-size: 2.5vw; 
+
+
+    .reset {
+        font-size: 1.2vw; 
+    }
+
+    .nav {
+        height: 3vw; 
+
+}
